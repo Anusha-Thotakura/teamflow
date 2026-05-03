@@ -21,6 +21,19 @@ AI-powered insights, and real-time budget tracking.
 teamflow/
 ├── frontend/     React.js app (port 3000)
 └── backend/      Spring Boot REST API (port 8081)
+## 📸 Screenshots
+
+### 👥 Teammates
+![Teammates](screenshots/TeamMate1.png)
+
+### 🔧 Admin Panel
+![Admin](screenshots/admin.png)
+
+### 🏠 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### 📁 Projects
+![Projects](screenshots/projects.png)
 
 ## Setup — backend
 cd backend

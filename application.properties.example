@@ -1,0 +1,11 @@
+spring.datasource.url=jdbc:postgresql://localhost:5432/teamflow
+spring.datasource.username=your_db_username
+spring.datasource.password=your_db_password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+
+jwt.secret=your_jwt_secret_min_32_characters_long
+
+groq.api.key=your_groq_api_key_here
+groq.api.url=https://api.groq.com/openai/v1/chat/completions
+groq.model=llama3-8b-8192

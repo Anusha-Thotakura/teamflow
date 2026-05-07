@@ -54,7 +54,14 @@ public class AuthController {
         repo.save(user);
         return ResponseEntity.ok(Map.of("message", "Registered successfully. You can now login."));
     }
-
+@PostMapping("/init")
+public ResponseEntity<?> initAdmin() {
+    String email = "admin@gmail.com";
+    if (!allowedEmailRepo.existsByEmail(email)) {
+        allowedEmailRepo.save(new AllowedEmail(email));
+    }
+    return ResponseEntity.ok(Map.of("message", "Admin email whitelisted"));
+}
     // ─────────────────────────────────────────────
     // LOGIN
     // ─────────────────────────────────────────────
